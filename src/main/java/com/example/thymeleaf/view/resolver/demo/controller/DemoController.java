@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class DemoController {
 
+	//Comment Added
 	@RequestMapping("/")
 	public String redirect() {
 		return "modules/main";
 	}
+	
 	
 	@RequestMapping("/emp/all")
 	public String redirectToList(Model model) {
