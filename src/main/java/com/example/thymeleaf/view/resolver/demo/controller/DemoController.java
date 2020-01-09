@@ -13,7 +13,7 @@ public class DemoController {
 	//Comment Added
 	@RequestMapping("/")
 	public String redirect() {
-		return "modules/main";
+		return "main";
 	}
 	
 	
@@ -22,6 +22,6 @@ public class DemoController {
 		List<Long> empList = new ArrayList<>();
 		
 		model.addAttribute("empList",empList);
-		return "modules/emp";
+		return "emp";
 	}
 }
